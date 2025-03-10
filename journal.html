@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geliştirme Günlüğü</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; background-color: #f4f4f4; }
+        .container { max-width: 800px; margin: auto; padding: 20px; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2 { color: #333; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>"HyperSportLoto: Her Zaman Güncel" Geliştirme Süreci</h1>
+        <h2>1. Aşama: Mükemmel Fikir</h2>
+        <p>Gerçek zamanlı maç ve piyango sonuçlarını çekecek bir uygulama yapmaya karar verdim. Böylece metroda internet çekmediğinde bile kaybettiğin biletlere üzülmeye devam edebilirsin.</p>
+        
+        <h2>2. Aşama: Mimari – "Ne halt ettim ben?"</h2>
+        <ul>
+            <li>Bahis ve piyango API'lerinden veri çekecek bir sunucu</li>
+            <li>Her 2-3 dakikada bir yeni verileri arka planda sessizce çeken bir istemci</li>
+            <li>Eski kayıplarını tekrar görebilmen için yerel veri deposu</li>
+        </ul>
+        <p>Tabii API'lerin Bitcoin fiyatı gibi değişebileceğini hesaba katmadım...</p>
+        
+        <h2>3. Aşama: Arka Plan Güncellemeleri – "Neden her şey kasıyor?"</h2>
+        <p>İlk prototip pil tüketiyordu, sanki 30 sekme açık bir tarayıcı gibi. Optimizasyon zamanı:</p>
+        <ul>
+            <li>WebSockets'e geçtim. Artık veriler bana akıyor, kedi mamaya koşar gibi.</li>
+            <li>Önbellekleme ekledim. İnternet kesilirse, uygulama "sorun yok" taklidi yapıyor.</li>
+        </ul>
+        
+        <h2>4. Aşama: Çevrimdışı Modu – "Kullanıcıları Nasıl Kandırırız?"</h2>
+        <ul>
+            <li><strong>Veri güncelse:</strong> Göster, sorun yok.</li>
+            <li><strong>10 dakikadır güncellenmemişse:</strong> "Belki güncel değil."</li>
+            <li><strong>24 saat geçmişse:</strong> "Burası bir zamanlar verilerle doluydu..."</li>
+        </ul>
+        
+        <h2>5. Aşama: Arayüz – "Gece Körlüğüne Son!"</h2>
+        <p>Tabii ki koyu tema ekledim. Çünkü kim maç sonuçlarına gündüz bakıyor ki?</p>
+        
+        <h2>Final: Yayına Alma</h2>
+        <p>Kendi üzerimde, arkadaşlarımda ve rastgele spor barı insanlarında test ettikten sonra dedim ki: TAMAMDIR! Yayına aldım. Arka plan güncellemeleri çalışıyor, pil canavarı değil, çevrimdışı mod harika.</p>
+        
+        <h2>Sonuç:</h2>
+        <p>Geliştirme sadece kod yazmak değil, aynı zamanda kaos, API'ler ve kendi tembelliğinle savaşmaktır. 😆</p>
+    </div>
+</body>
+</html>
